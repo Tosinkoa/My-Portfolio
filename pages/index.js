@@ -30,10 +30,10 @@ export default function Home() {
             <p className="flex-wrap font-bold font-my-font">I am a proffessional frontend developer</p>
 
             <div className="space-x-8 inline-flex mt-4">
-              <p className="hireme_learnmore bg-indigo-600 transition-colors duration-300 ease-in-out hover:bg-indigo-400">
+              <p className="hireme_learnmore bg-indigo-600 transition-colors duration-300 ease-in-out active:bg-indigo-400">
                 Hire Me
               </p>
-              <p className="hireme_learnmore bg-gray-900 transition-colors duration-300 ease-in-out  hover:bg-gray-600">
+              <p className="hireme_learnmore bg-gray-900 transition-colors duration-300 ease-in-out  active:bg-gray-600">
                 Learn More
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10">
           <Link href="https://remarkable-tarsier-329022.netlify.app/">
-            <a target="_blank" className="space-y-4 m-8 hover:m-0 ease-in-out transition-all duration-500">
+            <a target="_blank" className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
               <Image
                 src="/assets/images/Best-Pics.png"
                 alt="big-c"
@@ -113,7 +113,7 @@ export default function Home() {
             </a>
           </Link>
           <Link href="https://astonishing-pithivier-df8ad1.netlify.app/">
-            <a target="_blank" className="space-y-4 m-8 hover:m-0 ease-in-out transition-all duration-500">
+            <a target="_blank" className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
               <Image
                 src="/assets/images/info-web-pics.png"
                 alt="big-c"
@@ -129,7 +129,7 @@ export default function Home() {
             </a>
           </Link>
           <Link href="https://bright-swan-1e4748.netlify.app/">
-            <a target="_blank" className="space-y-4 m-8 hover:m-0 ease-in-out transition-all duration-500">
+            <a target="_blank" className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
               <Image
                 src="/assets/images/big-c-pics.png"
                 alt="big-c"
@@ -145,7 +145,7 @@ export default function Home() {
             </a>
           </Link>
           <Link href="/#">
-            <a className="space-y-4 m-8 hover:m-0 ease-in-out transition-all duration-500">
+            <a className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
               <Image
                 src="/assets/images/portfolio-pics.png"
                 alt="big-c"
