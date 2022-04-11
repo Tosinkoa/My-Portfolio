@@ -97,7 +97,10 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10">
           <Link href="https://remarkable-tarsier-329022.netlify.app/">
-            <a target="_blank" className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
+            <a
+              target="_blank"
+              className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
+            >
               <Image
                 src="/assets/images/Best-Pics.png"
                 alt="big-c"
@@ -113,7 +116,10 @@ export default function Home() {
             </a>
           </Link>
           <Link href="https://astonishing-pithivier-df8ad1.netlify.app/">
-            <a target="_blank" className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
+            <a
+              target="_blank"
+              className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
+            >
               <Image
                 src="/assets/images/info-web-pics.png"
                 alt="big-c"
@@ -129,7 +135,10 @@ export default function Home() {
             </a>
           </Link>
           <Link href="https://bright-swan-1e4748.netlify.app/">
-            <a target="_blank" className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
+            <a
+              target="_blank"
+              className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
+            >
               <Image
                 src="/assets/images/big-c-pics.png"
                 alt="big-c"
@@ -145,7 +154,7 @@ export default function Home() {
             </a>
           </Link>
           <Link href="/#">
-            <a className="space-y-4 m-8 active:m-0 ease-in-out transition-all duration-500">
+            <a className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500">
               <Image
                 src="/assets/images/portfolio-pics.png"
                 alt="big-c"
