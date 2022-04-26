@@ -96,7 +96,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold">Recent Works</h1>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10">
-          <Link href="https://helpful-puppy-d01b53.netlify.app">
+          <Link href="https://ivana-event.app">
             <a
               target="_blank"
               className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
@@ -115,7 +115,7 @@ export default function Home() {
               </div>
             </a>
           </Link>
-          <Link href="https://remarkable-tarsier-329022.netlify.app/">
+          <Link href="https://big-c.netlify.app/">
             <a
               target="_blank"
               className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
