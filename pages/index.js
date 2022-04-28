@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { MdFrontHand } from "react-icons/md";
 import { FaTwitter, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import {GoArrowRight} from "react-icons/go";
+import { GoArrowRight } from "react-icons/go";
 import { SiGmail } from "react-icons/si";
 import Link from "next/link";
 
@@ -52,7 +52,8 @@ export default function Home() {
               I'm a passionate Fullstack Developer in possession of exceptional problem-solving and analytical skills,
               disciplinary rules and procedures to set the behavior standards expected of me at work, proactive attitude
               with high time management skills qualities. I use top frameworks like Nextjs (react framework), React,
-              Redux-toolkit, tailwindcss and so on. For my backend, I use one of the best which is Node.JS, Express.js, Mongoose, e.t.c for my backend. 
+              Redux-toolkit, tailwindcss and so on. For my backend, I use one of the best which is Node.JS, Express.js,
+              Mongoose, Socket.io, Nodemailer e.t.c for my backend.
             </p>
           </div>
           <div id="services" className="flex scroll-mt-24 flex-col mt-0 md:m-10 md:mr-0 sm:mb-6 md:mt-20">
@@ -69,7 +70,7 @@ export default function Home() {
               </ul>
               <p>You can reach me here:</p>
               <div className="flex space-x-4 my-4 text-lg text-center">
-                <GoArrowRight className="text-3xl flex"/>
+                <GoArrowRight className="text-3xl flex" />
                 <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
                   <a target="_blank" className="home_social">
                     <FaLinkedinIn />
