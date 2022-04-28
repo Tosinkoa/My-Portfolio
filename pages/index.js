@@ -124,7 +124,7 @@ export default function Home() {
               </div>
             </a>
           </Link>
-          <Link href="https://astonishing-pithivier-df8ad1.netlify.app/">
+          <Link href="https://info-web-app.netlify.app">
             <a
               target="_blank"
               className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
