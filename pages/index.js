@@ -25,27 +25,33 @@ export default function Home() {
               Hey There <MdFrontHand className="-rotate-45 text-2xl inline-flex -mt-1 text-yellow-600" />
             </div>
             <h1 className="font-my-font font-extrabold text-3xl">Paul Ojo</h1>
-            <p>Frontend Developer</p>
 
-            <p className="flex-wrap font-bold font-my-font">I am a proffessional frontend developer</p>
+            <p className="flex-wrap font-bold font-my-font">I am a proffessional Software Developer</p>
 
             <div className="space-x-8 inline-flex mt-4">
-              <p className="hireme_learnmore bg-indigo-600 transition-colors duration-300 ease-in-out active:bg-indigo-400">
-                Hire Me
-              </p>
-              <p className="hireme_learnmore bg-gray-900 transition-colors duration-300 ease-in-out  active:bg-gray-600">
-                Learn More
-              </p>
+              <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
+                <a
+                  target="_blank"
+                  className="hireme_learnmore bg-indigo-600 transition-colors duration-300 ease-in-out active:bg-indigo-400"
+                >
+                  Hire Me
+                </a>
+              </Link>
+              <Link href="#about">
+                <a className="hireme_learnmore bg-gray-900 transition-colors duration-300 ease-in-out  active:bg-gray-600">
+                  Learn More
+                </a>
+              </Link>
             </div>
           </div>
           {/* About me and Connect with me */}
           <div id="about" className="flex flex-col scroll-mt-24 md:m-10  md:ml-0 sm:grid-cols-1 sm:mb-6 md:mt-20">
             <h1 className="font-extrabold text-sm text-indigo-600">ABOUT ME</h1>
             <p className="flex flex-wrap text-gray-600  md:mt-4 sm:mt-2">
-              I'm an outstanding Full-stack Developer in possession of exceptional problem-solving and analytical
-              skills, disciplinary rules and procedures to set the behavior standards expected of me at work, proactive
-              attitude with high time management skills qualities. I use top frameworks like Nextjs (react framework),
-              React, Redux-toolkit, tailwindcss and so on.
+              I'm a passionate Software Developer in possession of exceptional problem-solving and analytical skills,
+              disciplinary rules and procedures to set the behavior standards expected of me at work, proactive attitude
+              with high time management skills qualities. I use top frameworks like Nextjs (react framework), React,
+              Redux-toolkit, tailwindcss and so on.
             </p>
           </div>
           <div id="services" className="flex scroll-mt-24 flex-col mt-0 md:m-10 md:mr-0 sm:mb-6 md:mt-20">
@@ -65,21 +71,6 @@ export default function Home() {
                 <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
                   <a target="_blank" className="home_social">
                     <FaLinkedinIn />
-                  </a>
-                </Link>
-                <Link href="https://twitter.com/PaulOjo67914904">
-                  <a target="_blank" className="home_social">
-                    <FaTwitter />
-                  </a>
-                </Link>
-                <Link href="https://wa.me/2347068946708">
-                  <a target="_blank" className="home_social">
-                    <FaWhatsapp />
-                  </a>
-                </Link>
-                <Link href="tel:+2347068946708">
-                  <a className="home_social">
-                    <BsFillTelephoneFill />
                   </a>
                 </Link>
                 <Link href="mailto:ojopaul20200101@gmail.com">

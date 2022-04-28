@@ -13,7 +13,6 @@ const Footer = () => {
           <p className="text-base font-semibold">Contact Info</p>
           <div className="text-xs space-y-1 flex flex-col">
             <Link href="mailto:ojopaul20200101@gmail.com">ojopaul20200101@gmail.com</Link>
-            <Link href="tel:+2347068946708">+234-706-894-6708</Link>
           </div>
         </div>
         <div className="flex flex-col">
@@ -46,21 +45,6 @@ const Footer = () => {
         <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
           <a target="_blank" className="footer_social">
             <FaLinkedinIn />
-          </a>
-        </Link>
-        <Link href="https://twitter.com/PaulOjo67914904">
-          <a target="_blank" className="footer_social">
-            <FaTwitter />
-          </a>
-        </Link>
-        <Link href="https://wa.me/2347068946708">
-          <a target="_blank" className="footer_social">
-            <FaWhatsapp />
-          </a>
-        </Link>
-        <Link href="tel:+2347068946708">
-          <a target="_blank" className="footer_social">
-            <BsFillTelephoneFill />
           </a>
         </Link>
         <Link href="mailto:ojopaul20200101@gmail.com">
