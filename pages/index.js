@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Layout from "../components/Layout";
 import { MdFrontHand } from "react-icons/md";
-import { FaTwitter, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
 import { SiGmail } from "react-icons/si";
 import Link from "next/link";
@@ -27,7 +26,7 @@ export default function Home() {
             </div>
             <h1 className="font-my-font font-extrabold text-3xl">Paul Ojo</h1>
 
-            <p className="flex-wrap font-bold font-my-font">I am a proffessional Fullstack Developer</p>
+            <p className="flex-wrap font-bold font-my-font">I am a professional Fullstack Developer</p>
 
             <div className="space-x-8 inline-flex mt-4">
               <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
@@ -90,7 +89,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold">Recent Works</h1>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10">
-          <Link href="https://ivana-event.app">
+          <Link href="https://ivana-event.netlify.app">
             <a
               target="_blank"
               className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
