@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <h1 className="font-my-font font-extrabold text-3xl">Paul Ojo</h1>
 
-            <p className="flex-wrap font-bold font-my-font">I am a professional Fullstack Developer</p>
+            <p className="flex-wrap font-bold font-my-font">I am a professional Software Developer</p>
 
             <div className="space-x-8 inline-flex mt-4">
               <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
@@ -48,7 +48,7 @@ export default function Home() {
           <div id="about" className="flex flex-col scroll-mt-24 md:m-10  md:ml-0 sm:grid-cols-1 sm:mb-6 md:mt-20">
             <h1 className="font-extrabold text-sm text-indigo-600">ABOUT ME</h1>
             <p className="flex flex-wrap text-gray-600  md:mt-4 sm:mt-2">
-              I'm a passionate Fullstack Developer with 3yrs of experience. Am in possession of exceptional
+              I'm a passionate Software Developer with 3yrs of experience. Am in possession of exceptional
               problem-solving and analytical skills, proactive attitude with high time management skill qualities.
             </p>
           </div>
