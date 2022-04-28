@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </a>
           </Link>
-          <Link href="https://big-c.netlify.app/">
+          <Link href="https://best-pics-app.netlify.app//">
             <a
               target="_blank"
               className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </a>
           </Link>
-          <Link href="https://bright-swan-1e4748.netlify.app/">
+          <Link href="https://big-c.netlify.app">
             <a
               target="_blank"
               className="space-y-4 m-8 active:m-0 hover:m-0 focus:m-0 ease-in-out transition-all duration-500"
@@ -157,8 +157,9 @@ export default function Home() {
                 className="rounded-md"
               />
               <div>
-                <h1 className="font-bold"> Best-Pics Web App</h1>
+                <h1 className="font-bold"> Big-C Web App</h1>
                 <p className="text-xs font-semibold text-gray-600">A website for buying and selling cars</p>
+                <h1 className="font-bold text-teal-600">Still in progress...</h1>
               </div>
             </a>
           </Link>
