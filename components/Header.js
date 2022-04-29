@@ -58,7 +58,7 @@ const NavBar = ({ dropdownHandler }) => {
                 </Link>
 
                 <a
-                  href="/MyCv.pdf"
+                  href="/Paul Ojo Resume_CV.pdf"
                   className="lg:mt-1 md:mt-0 cursor-pointer sm:mt-1"
                   download="Paul-Ojo-Cv.pdf"
                   rel="noopener noreferrer"
