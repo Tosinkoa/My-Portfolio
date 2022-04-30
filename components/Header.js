@@ -57,6 +57,16 @@ const NavBar = ({ dropdownHandler }) => {
                   </a>
                 </Link>
               </div>
+              <a
+                href="/Paul Ojo Resume CV.pdf"
+                className="lg:mt-1 md:mt-0 cursor-pointer sm:mt-1"
+                download="Paul-Ojo-Cv.pdf"
+                rel="noopener noreferrer"
+                alt="alt text"
+                target="_blank"
+              >
+                <p className="text-xs font-bold text-white bg-indigo-600 rounded-lg p-2 py-1 mr-2">Download CV</p>
+              </a>
               <button onClick={dropdownHandler} className="navbar_icons lg:hidden">
                 <TiThMenu className="text-2xl text-gray-800 " />
               </button>

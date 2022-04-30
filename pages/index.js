@@ -48,8 +48,8 @@ export default function Home() {
           <div id="about" className="flex flex-col scroll-mt-24 md:m-10  md:ml-0 sm:grid-cols-1 sm:mb-6 md:mt-20">
             <h1 className="font-extrabold text-sm text-indigo-600">ABOUT ME</h1>
             <p className="flex flex-wrap text-gray-600  md:mt-4 sm:mt-2">
-              I'm a passionate Software Developer with 3yrs of experience. Am in possession of exceptional
-              problem-solving and analytical skills, proactive attitude with high time management skill qualities.
+              I'm a passionate Software Developer, am in possession of exceptional problem-solving and analytical
+              skills, proactive attitude with high time management skill qualities.
             </p>
           </div>
           <div id="services" className="flex scroll-mt-24 flex-col mt-0 md:m-10 md:mr-0 sm:mb-6 md:mt-20">
