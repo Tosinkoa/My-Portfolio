@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-extrabold md:text-lg sm:text-sm">What I Do?</h1>
+          <h1 className="font-extrabold text-xl">What I Do?</h1>
           <Link href="https://remarkable-tarsier-329022.netlify.app/">
             <a target="_blank">Best-Pics Web App</a>
           </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-extrabold md:text-lg sm:text-sm">Menu</h1>
+          <h1 className="font-extrabold text-xl">Menu</h1>
           <Link href="#home">Home</Link>
           <Link href="#about">About</Link>
           <Link href="#services">Services</Link>
