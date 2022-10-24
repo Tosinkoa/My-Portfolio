@@ -93,25 +93,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold">Recent Works</h1>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10">
-          <Link href="https://ivana-event.netlify.app">
-            <a
-              target="_blank"
-              className="space-y-4 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500"
-            >
-              <Image
-                src="/assets/images/Event-login.png"
-                alt="big-c"
-                height={380}
-                width={800}
-                objectFit="cover"
-                className="rounded-md"
-              />
-              <div>
-                <h1 className="font-bold"> Event-App</h1>
-                <p className="text-xs font-semibold ">A website for creating events</p>
-              </div>
-            </a>
-          </Link>
+
           <Link href="https://best-pics-app.netlify.app/">
             <a
               target="_blank"
@@ -131,7 +113,26 @@ export default function Home() {
               </div>
             </a>
           </Link>
-          <Link href="https://info-web-app.netlify.app">
+          {/* <Link href="https://ivana-event.netlify.app">
+            <a
+              target="_blank"
+              className="space-y-4 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500"
+            >
+              <Image
+                src="/assets/images/Event-login.png"
+                alt="big-c"
+                height={380}
+                width={800}
+                objectFit="cover"
+                className="rounded-md"
+              />
+              <div>
+                <h1 className="font-bold"> Event-App</h1>
+                <p className="text-xs font-semibold ">A website for creating events</p>
+              </div>
+            </a>
+          </Link> */}
+          {/* <Link href="https://info-web-app.netlify.app">
             <a
               target="_blank"
               className="space-y-4 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500"
@@ -149,8 +150,8 @@ export default function Home() {
                 <p className="text-xs font-semibold ">A website for persisting users information</p>
               </div>
             </a>
-          </Link>
-          <Link href="https://big-c.netlify.app">
+          </Link> */}
+          {/* <Link href="https://big-c.netlify.app">
             <a
               target="_blank"
               className="space-y-4 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500"
@@ -169,11 +170,11 @@ export default function Home() {
                 <h1 className="font-bold text-teal-600">Still in progress...</h1>
               </div>
             </a>
-          </Link>
+          </Link> */}
           <Link href="/#">
             <a className="space-y-4 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500">
               <Image
-                src="/assets/images/portfolio-pics.png"
+                src="/assets/images/my-portfolio-picture.png"
                 alt="big-c"
                 height={380}
                 width={800}
