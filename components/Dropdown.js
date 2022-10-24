@@ -14,16 +14,14 @@ const Dropdown = ({ showDropdown, dropdownHandler }) => {
         </>
       )}
       <div
-        className={`dropdown_background ${
-          showDropdown ? "translate-x-0" : "-translate-x-full"
-        } animate ease-in-out duration-700 `}
+        className={`dropdown_background ${showDropdown ? "translate-x-0" : "-translate-x-full"
+          } animate ease-in-out duration-700 `}
       >
         <Link href="/" passHref>
           <div className="dropdown_header" onClick={dropdownHandler}>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="h-16 w-full space-x-1 inline-flex  mt-3 ">
-                <FaBoxOpen className="text-indigo-900 text-3xl" />
-                <h1 className="navbar_header_title">My Portfolio</h1>
+                <FaBoxOpen className=" text-3xl" />
               </div>
             </div>
             <div className="right-20">

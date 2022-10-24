@@ -5,18 +5,18 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative h-full  bottom-0 text-sm text-gray-50 bg-indigo-600 w-full rounded-t-3xl p-4  ">
+    <footer className="relative h-full  bottom-0 text-sm bg-indigo-600 w-full rounded-t-3xl p-4 font-semibold ">
       <div className="border border-gray-50"></div>
       <div className="grid md:grid-cols-3 sm:ml-6 md:ml-20 mt-10 mb-4 sm:grid-cols-1 md:space-y-0 sm:space-y-5 ">
         <div className="flex flex-col">
-          <h1 className="text-xl font-bold">Let's Talk!</h1>
+          <h1 className="text-xl font-extrabold">Let's Talk!</h1>
           <p className="text-base font-semibold">Contact Info</p>
           <div className="text-xs space-y-1 flex flex-col">
             <Link href="mailto:ojopaul20200101@gmail.com">ojopaul20200101@gmail.com</Link>
           </div>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-bold md:text-lg sm:text-sm">What I Do?</h1>
+          <h1 className="font-extrabold md:text-lg sm:text-sm">What I Do?</h1>
           <Link href="https://remarkable-tarsier-329022.netlify.app/">
             <a target="_blank">Best-Pics Web App</a>
           </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-bold md:text-lg sm:text-sm">Menu</h1>
+          <h1 className="font-extrabold md:text-lg sm:text-sm">Menu</h1>
           <Link href="#home">Home</Link>
           <Link href="#about">About</Link>
           <Link href="#services">Services</Link>
@@ -41,7 +41,7 @@ const Footer = () => {
 
       <div className="border border-gray-50 "></div>
 
-      <div className="flex justify-center space-x-4 my-4 text-lg text-center mb-8 mt-5">
+      <div className="flex text-gray-800 justify-center space-x-4 my-4 text-lg text-center mb-8 mt-5">
         <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
           <a target="_blank" className="footer_social">
             <FaLinkedinIn />
