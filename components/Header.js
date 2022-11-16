@@ -21,7 +21,7 @@ const NavBar = ({ dropdownHandler }) => {
       {router.pathname === "/login" || router.pathname === "/register" ? (
         ""
       ) : (
-        <div className="fixed  text-gray-50 z-10">
+        <div className="fixed text-gray-50 z-10">
           <div className="navbar_background">
             <div className="sec_navbar_background items-center">
               <div className="third_navbar_background ">
@@ -42,15 +42,14 @@ const NavBar = ({ dropdownHandler }) => {
                 </Link>
               </div>
               <div className="space-x-3">
-                <button onClick={dropdownHandler} className="navbar_icons md:hidden">
-                  <TiThMenu className="icon_style" />
-                </button>
-
                 <button
                   onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                   className=" w-5 navbar_icons text-2xl"
                 >
                   {theme === "light" ? <BsMoonStarsFill /> : <MdWbSunny />}
+                </button>
+                <button onClick={dropdownHandler} className="navbar_icons md:hidden">
+                  <TiThMenu className="icon_style" />
                 </button>
               </div>
             </div>

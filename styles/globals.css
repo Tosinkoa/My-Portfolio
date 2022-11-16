@@ -34,7 +34,7 @@
 }
 
 .navbar_list {
-  @apply lg:text-xl md:text-lg  font-medium  rounded-lg p-2 py-1 inline-flex sm:hidden md:flex;
+  @apply lg:text-xl md:text-lg  font-medium  rounded-lg p-2 py-1 inline-flex sm:hidden md:flex hover:text-indigo-300 focus:text-indigo-300;
 }
 
 .icon_style {

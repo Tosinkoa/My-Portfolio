@@ -6,8 +6,12 @@ import { GoArrowRight } from "react-icons/go"
 import { SiGmail } from "react-icons/si"
 import Link from "next/link"
 import { IoLogoWhatsapp } from "react-icons/io"
+import RecentWork from "../components/RecentWork"
+import RecentWorkData from "../components/RecentWork.json"
+import { useState } from "react"
 
 export default function Home() {
+  const [showSocialMediaButton, setShowSocialMediaButton] = useState(false)
   return (
     <Layout>
       <div className="w-10/12 mx-auto font-semibold">
@@ -30,12 +34,40 @@ export default function Home() {
 
             <p className="flex-wrap font-bold ">I am a professional Software Developer</p>
 
-            <div className="space-x-8 inline-flex mt-4 ">
-              <Link href="https://www.linkedin.com/in/paul-ojo-86a840227/">
-                <button target="_blank" className="hireme_learnmore bg-indigo-600 ease-in-out focus:bg-indigo-400">
-                  Hire Me
-                </button>
-              </Link>
+            <div className="space-x-8 inline-flex mt-4 relative">
+              {showSocialMediaButton && (
+                <div
+                  onMouseEnter={() => setShowSocialMediaButton(true)}
+                  onMouseLeave={() => setShowSocialMediaButton(false)}
+                  className="absolute bg-indigo-200 rounded-lg p-4  flex space-x-4 my-4 text-lg text-center items-center z-10 border-neutral-500 border -top-[150px]"
+                >
+                  <div class="absolute -z-10 h-10 w-10 rotate-45 transform border border-neutral-500 border-l-0 border-t-0 -bottom-5 left-0 right-0 mx-auto bg-indigo-200"></div>
+
+                  <Link target="_blank" href="https://wa.me/2347068946708">
+                    <button className="home_social">
+                      <IoLogoWhatsapp className="flex mx-auto text-3xl" />
+                    </button>
+                  </Link>
+                  <Link target="_blank" href="https://www.linkedin.com/in/paul-ojo-86a840227/">
+                    <button className="home_social">
+                      <FaLinkedinIn className="flex mx-auto text-3xl" />
+                    </button>
+                  </Link>
+                  <Link target="_blank" href="mailto:ojopaul20200101@gmail.com">
+                    <button className="home_social">
+                      <SiGmail className="flex mx-auto text-3xl" />
+                    </button>
+                  </Link>
+                </div>
+              )}
+              <button
+                onClick={() => setShowSocialMediaButton(!showSocialMediaButton)}
+                target="_blank"
+                className="hireme_learnmore bg-indigo-600 ease-in-out focus:bg-indigo-400"
+              >
+                Hire Me
+              </button>
+
               <Link href="#about">
                 <button className="hireme_learnmore bg-gray-900 ease-in-out  active:bg-gray-600 ">Learn More</button>
               </Link>
@@ -85,37 +117,19 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="recent-works" className="grid scroll-mt-24 grid-cols-1 text-center my-8">
-          <h1 className="font-extrabold text-xl md:text-3xl ">RECENT WORKS</h1>
-        </div>
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10 -mt-6">
-          <Link target="_blank" href="https://best-pics-app.netlify.app/">
-            <button className="space-y-6 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500">
-              <Image
-                src="/assets/images/Best-Pics.png"
-                alt="big-c"
-                height={380}
-                width={800}
-                objectFit="cover"
-                className="rounded-md"
+        <h1 className="font-extrabold flex justify-center mx-auto text-xl md:text-3xl mb-8 ">RECENT WORKS</h1>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10 -mt-6 gap-6">
+          {RecentWorkData.map((recentWorks) => (
+            <>
+              <RecentWork
+                id={recentWorks.id}
+                link={recentWorks.link}
+                image={recentWorks.image}
+                label={recentWorks.label}
+                github_link={recentWorks.github_link}
               />
-
-              <h1 className="font-bold text-xl md:text-2xl"> Best-Pics App</h1>
-            </button>
-          </Link>
-          <Link href="/#">
-            <button className="space-y-6 m-8 active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500">
-              <Image
-                src="/assets/images/my-portfolio-picture.png"
-                alt="big-c"
-                height={380}
-                width={800}
-                objectFit="cover"
-                className="rounded-md"
-              />
-              <h1 className="font-bold text-xl md:text-2xl"> My Portfolio</h1>
-            </button>
-          </Link>
+            </>
+          ))}
         </div>
       </div>
     </Layout>
