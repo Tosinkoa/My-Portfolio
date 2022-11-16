@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Layout from "../components/Layout"
 import { MdFrontHand } from "react-icons/md"
 import { FaLinkedinIn } from "react-icons/fa"
@@ -16,7 +16,6 @@ export default function Home() {
     <Layout>
       <div className="w-10/12 mx-auto font-semibold">
         <div className="grid md:grid-cols-2 md:m-10  md:ml-0 sm:grid-cols-1 justify-center mb-6">
-          {/* Photo and Head */}
           <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg hover:-rotate-3 transition-all duration-500 relative mx-auto shadow-2xl ">
             <Image
               src="/assets/images/paul-image.jpg"
@@ -69,7 +68,7 @@ export default function Home() {
               </button>
 
               <Link href="#about">
-                <button className="hireme_learnmore bg-gray-900 ease-in-out  active:bg-gray-600 ">Learn More</button>
+                <button className="hireme_learnmore bg-gray-700 ease-in-out  active:bg-gray-400 ">Learn More</button>
               </Link>
             </div>
           </div>
@@ -120,7 +119,10 @@ export default function Home() {
         <h1 className="font-extrabold flex justify-center mx-auto text-xl md:text-3xl mb-8 ">RECENT WORKS</h1>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 mb-10 -mt-6 gap-6">
           {RecentWorkData.map((recentWorks) => (
-            <>
+            <div
+              key={recentWorks.id}
+              className=" active:scale-110 hover:scale-110 focus:m-0 ease-in-out transition-all duration-500 m-4"
+            >
               <RecentWork
                 id={recentWorks.id}
                 link={recentWorks.link}
@@ -128,7 +130,7 @@ export default function Home() {
                 label={recentWorks.label}
                 github_link={recentWorks.github_link}
               />
-            </>
+            </div>
           ))}
         </div>
       </div>

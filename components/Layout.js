@@ -17,7 +17,7 @@ const Layout = ({ title, keywords, description, children }) => {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="home" className="relative font-open-san">
+      <div id="home" className="relative font-open-san bg-gray-50 dark:bg-gray-900">
         <Header dropdownHandler={dropdownHandler} />
         <Dropdown showDropdown={showDropdown} dropdownHandler={dropdownHandler} />
         <div className="mt-20 md:mt-16">{children}</div>
