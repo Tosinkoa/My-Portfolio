@@ -1,13 +1,12 @@
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      fontFamily: {
-        raleway: ["Raleway", "sans-serif"],
-      },
-    },
     extend: {
+      fontFamily: {
+        "open-san": ["Open Sans", "sans-serif"],
+      },
+
       animation: {
         wiggle: "wiggle 2s ease-in-out infinite",
         bounce: "bounce 2s infinite",
@@ -23,6 +22,5 @@ module.exports = {
       },
     },
   },
-
   plugins: [],
-};
+}

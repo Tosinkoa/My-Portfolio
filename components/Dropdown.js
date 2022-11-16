@@ -1,7 +1,7 @@
-import { FaTimes, FaHome, FaLaptop, FaBoxOpen } from "react-icons/fa";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
-import { GiTalk } from "react-icons/gi";
-import Link from "next/link";
+import { FaTimes, FaHome, FaLaptop, FaBoxOpen } from "react-icons/fa"
+import { MdOutlineMiscellaneousServices } from "react-icons/md"
+import { GiTalk } from "react-icons/gi"
+import Link from "next/link"
 
 const Dropdown = ({ showDropdown, dropdownHandler }) => {
   return (
@@ -14,57 +14,52 @@ const Dropdown = ({ showDropdown, dropdownHandler }) => {
         </>
       )}
       <div
-        className={`dropdown_background ${showDropdown ? "translate-x-0" : "-translate-x-full"
-          } animate ease-in-out duration-700 `}
+        className={`dropdown_background ${
+          showDropdown ? "translate-x-0" : "-translate-x-full"
+        } animate ease-in-out duration-700 `}
       >
-        <Link href="/" passHref>
-          <div className="dropdown_header" onClick={dropdownHandler}>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="h-16 w-full space-x-1 inline-flex  mt-3 ">
-                <FaBoxOpen className=" text-3xl" />
-              </div>
-            </div>
-            <div className="right-20">
-              <FaTimes onClick={dropdownHandler} className="dropdown_close" />
-            </div>
-          </div>
-        </Link>
-        <div className="border-b  border-2"></div>
+        <button onClick={dropdownHandler} className="text-3xl font-semibold absolute right-4 top-4">
+          x
+        </button>
         {/* List */}
 
-        <ul className="flex flex-col mt-2">
+        <ul className="flex flex-col mt-10 ">
           <Link href="#home">
-            <a onClick={dropdownHandler}>
-              <li className="inline-flex m-2 cursor-pointer">
-                <FaHome className="text-indigo-600 text-xl mx-1" /> Home
-              </li>
-            </a>
+            <li
+              onClick={dropdownHandler}
+              className="inline-flex transition-all duration-500 m-2 hover:scale-110 cursor-pointer text-2xl font-semibold"
+            >
+              <FaHome className="text-indigo-600 text-4xl mx-1" /> Home
+            </li>
           </Link>
           <Link href="#about">
-            <a onClick={dropdownHandler}>
-              <li className="inline-flex m-2 cursor-pointer">
-                <GiTalk className="text-indigo-600 text-xl mx-1 mt-1" /> About
-              </li>
-            </a>
+            <li
+              onClick={dropdownHandler}
+              className="inline-flex transition-all duration-500 m-2 hover:scale-110 cursor-pointer text-2xl font-semibold"
+            >
+              <GiTalk className="text-indigo-600 text-4xl mx-1 mt-1" /> About
+            </li>
           </Link>
           <Link href="#services">
-            <a onClick={dropdownHandler}>
-              <li className="inline-flex m-2 cursor-pointer">
-                <MdOutlineMiscellaneousServices className="text-indigo-600 text-xl mx-1" /> Services
-              </li>
-            </a>
+            <li
+              onClick={dropdownHandler}
+              className="inline-flex transition-all duration-500 m-2 hover:scale-110 cursor-pointer text-2xl font-semibold"
+            >
+              <MdOutlineMiscellaneousServices className="text-indigo-600 text-4xl mx-1" /> Services
+            </li>
           </Link>
           <Link href="#recent-works">
-            <a onClick={dropdownHandler}>
-              <li className="inline-flex m-2 cursor-pointer">
-                <FaLaptop className="text-indigo-600 text-xl mx-1" /> Recent Works
-              </li>
-            </a>
+            <li
+              onClick={dropdownHandler}
+              className="inline-flex transition-all duration-500 m-2 hover:scale-110 cursor-pointer text-2xl font-semibold"
+            >
+              <FaLaptop className="text-indigo-600 text-4xl mx-1" /> Recent Works
+            </li>
           </Link>
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default Dropdown

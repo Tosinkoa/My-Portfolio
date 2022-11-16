@@ -1,13 +1,13 @@
-import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
-import { useState } from "react";
-import Dropdown from "./Dropdown";
+import Head from "next/head"
+import Header from "./Header"
+import Footer from "./Footer"
+import { useState } from "react"
+import Dropdown from "./Dropdown"
 
 const Layout = ({ title, keywords, description, children }) => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false)
 
-  const dropdownHandler = () => setShowDropdown(!showDropdown);
+  const dropdownHandler = () => setShowDropdown(!showDropdown)
 
   return (
     <div>
@@ -17,20 +17,20 @@ const Layout = ({ title, keywords, description, children }) => {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="home" className="relative font-raleway">
+      <div id="home" className="relative font-open-san">
         <Header dropdownHandler={dropdownHandler} />
         <Dropdown showDropdown={showDropdown} dropdownHandler={dropdownHandler} />
-        <div>{children}</div>
+        <div className="mt-20 md:mt-16">{children}</div>
         <Footer />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
 
 Layout.defaultProps = {
   title: "Paul Ojo Portfolio",
   description: "Paul Ojo portfolio web app",
   keywords: "Paul, Ojo, Paul Ojo, Ojo Paul, Paul Ojo Oluwatosin, Ojo Paul Oluwatosin, Oluwatosin, Oluwatosin Paul Ojo",
-};
+}
