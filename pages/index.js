@@ -14,9 +14,9 @@ export default function Home() {
   const [showSocialMediaButton, setShowSocialMediaButton] = useState(false)
   return (
     <Layout>
-      <div className="w-10/12 mx-auto font-semibold">
+      <div className="w-10/12 mx-auto font-semibold transition-all duration-500">
         <div className="grid md:grid-cols-2 md:m-10  md:ml-0 sm:grid-cols-1 justify-center mb-6">
-          <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg hover:-rotate-3 transition-all duration-500 relative mx-auto  ">
+          <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg hover:-rotate-3 transition-all duration-500 relative mx-auto ">
             <Image
               src="/assets/images/paul-image.jpg"
               alt="paul"
@@ -25,51 +25,53 @@ export default function Home() {
               className="rounded-lg"
             />
           </div>
-          <div className="sm:mt-16 md:mt-32 lg:mt-56 md:m-10 md:mr-0 transition-all animate-bounce sm:text-center md:text-left hover:animate-none">
-            <div className="inlne-flex font-semibold">
-              Hey There <MdFrontHand className="-rotate-45 text-2xl inline-flex -mt-1 text-yellow-600" />
-            </div>
-            <h1 className=" font-extrabold text-3xl">Paul Ojo</h1>
+          <div className=" md:m-10 md:mr-0 sm:text-center md:text-left hover:animate-none h-full flex ">
+            <div className="lg:mt-56 sm:mt-16 md:mt-32 mx-auto animate-bounce">
+              <div className="inlne-flex font-semibold">
+                Hey There <MdFrontHand className="-rotate-45 text-2xl inline-flex -mt-1 text-yellow-600" />
+              </div>
+              <h1 className=" font-extrabold text-3xl">Paul Ojo</h1>
 
-            <p className="flex-wrap font-bold ">I am a professional Software Developer</p>
+              <p className="flex-wrap font-bold ">I am a professional Software Developer</p>
 
-            <div className="space-x-8 inline-flex mt-4 relative">
-              {showSocialMediaButton && (
-                <div
-                  onMouseEnter={() => setShowSocialMediaButton(true)}
-                  onMouseLeave={() => setShowSocialMediaButton(false)}
-                  className="absolute bg-indigo-200 rounded-lg p-4  flex space-x-4 my-4 text-lg text-center items-center z-10 border-neutral-500 border -top-[150px]"
+              <div className="space-x-8 inline-flex mt-4 relative">
+                {showSocialMediaButton && (
+                  <div
+                    onMouseEnter={() => setShowSocialMediaButton(true)}
+                    onMouseLeave={() => setShowSocialMediaButton(false)}
+                    className="absolute bg-indigo-200 rounded-lg p-4  flex space-x-4 my-4 text-lg text-center items-center z-10 border-neutral-500 border -top-[150px]"
+                  >
+                    <div class="absolute -z-10 h-10 w-10 rotate-45 transform border border-neutral-500 border-l-0 border-t-0 -bottom-5 left-0 right-0 mx-auto bg-indigo-200"></div>
+
+                    <Link target="_blank" href="https://wa.me/2347068946708">
+                      <button className="home_social">
+                        <IoLogoWhatsapp className="flex mx-auto text-3xl" />
+                      </button>
+                    </Link>
+                    <Link target="_blank" href="https://www.linkedin.com/in/paul-ojo-86a840227/">
+                      <button className="home_social">
+                        <FaLinkedinIn className="flex mx-auto text-3xl" />
+                      </button>
+                    </Link>
+                    <Link target="_blank" href="mailto:ojopaul20200101@gmail.com">
+                      <button className="home_social">
+                        <SiGmail className="flex mx-auto text-3xl" />
+                      </button>
+                    </Link>
+                  </div>
+                )}
+                <button
+                  onClick={() => setShowSocialMediaButton(!showSocialMediaButton)}
+                  target="_blank"
+                  className="hireme_learnmore bg-indigo-600 ease-in-out focus:bg-indigo-400"
                 >
-                  <div class="absolute -z-10 h-10 w-10 rotate-45 transform border border-neutral-500 border-l-0 border-t-0 -bottom-5 left-0 right-0 mx-auto bg-indigo-200"></div>
+                  Hire Me
+                </button>
 
-                  <Link target="_blank" href="https://wa.me/2347068946708">
-                    <button className="home_social">
-                      <IoLogoWhatsapp className="flex mx-auto text-3xl" />
-                    </button>
-                  </Link>
-                  <Link target="_blank" href="https://www.linkedin.com/in/paul-ojo-86a840227/">
-                    <button className="home_social">
-                      <FaLinkedinIn className="flex mx-auto text-3xl" />
-                    </button>
-                  </Link>
-                  <Link target="_blank" href="mailto:ojopaul20200101@gmail.com">
-                    <button className="home_social">
-                      <SiGmail className="flex mx-auto text-3xl" />
-                    </button>
-                  </Link>
-                </div>
-              )}
-              <button
-                onClick={() => setShowSocialMediaButton(!showSocialMediaButton)}
-                target="_blank"
-                className="hireme_learnmore bg-indigo-600 ease-in-out focus:bg-indigo-400"
-              >
-                Hire Me
-              </button>
-
-              <Link href="#about">
-                <button className="hireme_learnmore bg-gray-700 ease-in-out  active:bg-gray-400 ">Learn More</button>
-              </Link>
+                <Link href="#about">
+                  <button className="hireme_learnmore bg-gray-700 ease-in-out  active:bg-gray-400 ">Learn More</button>
+                </Link>
+              </div>
             </div>
           </div>
           {/* About me and Connect with me */}

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fast": "git add . && git commit -m 'Done' && git push https://github.com/Tosinkoa/My-Portfolio.git"
   },
   "dependencies": {
     "@next/codemod": "^13.0.3",
