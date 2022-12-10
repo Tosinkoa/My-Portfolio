@@ -14,9 +14,9 @@ export default function Home() {
   const [showSocialMediaButton, setShowSocialMediaButton] = useState(false)
   return (
     <Layout>
-      <div className="w-10/12 mx-auto font-semibold transition-all duration-500">
-        <div className="grid md:grid-cols-2 md:m-10  md:ml-0 sm:grid-cols-1 justify-center mb-6">
-          <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg hover:-rotate-3 transition-all duration-500 relative mx-auto ">
+      <div className="w-10/12 mx-auto font-semibold">
+        <div className="grid md:grid-cols-2 md:m-10 md:ml-0 sm:grid-cols-1 justify-center mb-6">
+          <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg hover:-rotate-3 transition-all duration-500 relative mx-auto">
             <Image
               src="/assets/images/paul-image.jpg"
               alt="paul"
@@ -31,9 +31,7 @@ export default function Home() {
                 Hey There <MdFrontHand className="-rotate-45 text-2xl inline-flex -mt-1 text-yellow-600" />
               </div>
               <h1 className=" font-extrabold text-3xl">Paul Ojo</h1>
-
               <p className="flex-wrap font-bold ">I am a professional Software Developer</p>
-
               <div className="space-x-8 inline-flex mt-4 relative">
                 {showSocialMediaButton && (
                   <div
@@ -78,23 +76,29 @@ export default function Home() {
           <div id="about" className="flex flex-col scroll-mt-24 md:m-10  md:ml-0 sm:grid-cols-1 sm:mb-6 mt-10 md:mt-20">
             <h1 className="font-extrabold text-lg md:text-2xl text-indigo-600 ">ABOUT ME</h1>
             <p className="flex flex-wrap md:mt-4 sm:mt-2 text-inherit">
-              I'm a passionate Software Developer with exceptional problem solving and analytical skills, proactive
-              attitude and and build heristic solutions. I work with tools and frameworks like javascript, react, react
-              native, css, tailwindcss, nodejs, socket.io, and lot more. These tools help in building outstanding
-              websites and mobile apps.
+              I am a passionate Fullstack Developer with strong background in backend and frontend development, skilled
+              at implementing efficient, scalable, and reliable software solutions that meet the needs of users. I have
+              a passion for solving complex problems and a commitment to staying up-to-date with the latest trends and
+              technologies in the field.
+              <p className="mt-5">
+                My Tools Include: Nextjs | Reactjs | Node.js | Express.js | JavaScript | SQL | Postgresql | TailwindCSS
+                | Socket.io | MongoDB | Formik | RTK-Query | Redux-Toolkit | Framer-Motion | CSS | APIs | HTML and
+                more....
+              </p>
             </p>
           </div>
           <div id="services" className="flex scroll-mt-24 flex-col mt-0 md:m-10 md:mr-0 sm:mb-6 md:mt-20">
             <h1 className=" font-extrabold text-lg md:text-2xl text-indigo-600 ">CONNECT WITH ME</h1>
             <div className=" md:mt-4 sm:mt-2">
-              <p className="font-semibold">Do you need a website that is: </p>
+              <p className="font-semibold">Here are some skills I pocess: </p>
               <ul className="list-disc ml-4">
-                <li>Well Designed and functional</li>
-                <li>Easy to use</li>
-                <li>Optimized for mobile</li>
-                <li>Fresh, Quality Content</li>
-                <li>Clear calls to action</li>
-                <li>Optimized for Search (SEO) and Social Web</li>
+                <li>High level of expertise in both frontend and backend web development</li>
+                <li>
+                  Extensive experience working with a variety of technologies and frameworks, and being able to quickly
+                  learn and adapt to new ones as needed
+                </li>
+                <li>Strong problem-solving skills</li>
+                <li>Able to design and implement complex, scalable web applications</li>
               </ul>
               <p>You can reach me here:</p>
               <div className="flex space-x-4 my-4 text-lg text-center items-center">
