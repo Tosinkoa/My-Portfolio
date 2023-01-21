@@ -8,6 +8,20 @@
     },
     {
         "id": 2,
+        "link": "https://advertisement-campaign.netlify.app/",
+        "image": "/assets/images/advert-pics-for-nodejs-server.png",
+        "label": "Advertisment app frontend for Nodejs Server",
+        "github_link": "https://github.com/Tosinkoa/Advertising-Campaign-Frontend"
+    },
+    {
+        "id": 3,
+        "link": "https://advert-frontend-for-php-backend.netlify.app/",
+        "image": "/assets/images/advert-pics-for-php-server.png",
+        "label": "Advertisment app frontend for PHP Server",
+        "github_link": "https://github.com/Tosinkoa/Advert-Frontend-PHP-For-Server"
+    },
+    {
+        "id": 4,
         "link": "/#",
         "image": "/assets/images/my-portfolio-picture.png",
         "label": "My Portfolio",

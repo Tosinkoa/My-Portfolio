@@ -1,8 +1,7 @@
-import { FaTwitter, FaLinkedinIn, FaWhatsapp } from "react-icons/fa"
-import { BsFillTelephoneFill } from "react-icons/bs"
-import { SiGmail } from "react-icons/si"
 import Link from "next/link"
+import { FaLinkedinIn } from "react-icons/fa"
 import { IoLogoWhatsapp } from "react-icons/io"
+import { SiGmail } from "react-icons/si"
 
 const Footer = () => {
   return (
@@ -28,7 +27,6 @@ const Footer = () => {
       <div className="grid md:grid-cols-3 sm:ml-6 md:ml-20 mt-10 mb-4 sm:grid-cols-1 md:space-y-0 sm:space-y-5 ">
         <div className="flex flex-col">
           <h1 className="text-xl font-extrabold">Let's Talk!</h1>
-          <p className="text-base font-semibold">Contact Info</p>
           <div className="text-xs space-y-1 flex flex-col">
             <Link target="_blank" href="mailto:ojopaul20200101@gmail.com">
               ojopaul20200101@gmail.com
@@ -36,20 +34,34 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-extrabold text-xl">What I Do?</h1>
+          <h1 className="font-bold text-xl">What I Do?</h1>
           <Link target="_blank" href="https://best-pics-app.netlify.app/">
-            <button>Best-Pics Web App</button>
+            <button className="font-light md:font-normal">Best-Pics Web App</button>
+          </Link>
+          <Link target="_blank" href="https://advertisement-campaign.netlify.app/">
+            <button className="font-light md:font-normal">Advert App For Nodejs Server</button>
+          </Link>
+          <Link target="_blank" href="https://advert-frontend-for-php-backend.netlify.app/">
+            <button className="font-light md:font-normal">Advert App For PHP Server</button>
           </Link>
           <Link href="/#">
-            <button>My Portfolio</button>
+            <button className="font-light md:font-normal">My Portfolio</button>
           </Link>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-extrabold text-xl">Menu</h1>
-          <Link href="#home">Home</Link>
-          <Link href="#about">About</Link>
-          <Link href="#services">Services</Link>
-          <Link href="#recent-works">Recent Works</Link>
+          <h1 className="font-bold text-xl">Menu</h1>
+          <Link href="#home" className="font-light md:font-normal" passHref>
+            Home
+          </Link>
+          <Link href="#about" className="font-light md:font-normal" passHref>
+            About
+          </Link>
+          <Link href="#services" className="font-light md:font-normal" passHref>
+            Services
+          </Link>
+          <Link href="#recent-works" className="font-light md:font-normal" passHref>
+            Recent Works
+          </Link>
         </div>
       </div>
 

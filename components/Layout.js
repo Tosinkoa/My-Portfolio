@@ -1,8 +1,9 @@
+import TawkMessengerReact from "@tawk.to/tawk-messenger-react"
 import Head from "next/head"
-import Header from "./Header"
-import Footer from "./Footer"
 import { useState } from "react"
 import Dropdown from "./Dropdown"
+import Footer from "./Footer"
+import Header from "./Header"
 
 const Layout = ({ title, keywords, description, children }) => {
   const [showDropdown, setShowDropdown] = useState(false)
@@ -23,6 +24,10 @@ const Layout = ({ title, keywords, description, children }) => {
         <div className="mt-20 md:mt-16">{children}</div>
         <Footer />
       </div>
+      <TawkMessengerReact
+        propertyId={process.env.NEXT_PUBLIC_TAWK_PROPERTY_ID}
+        widgetId={process.env.NEXT_PUBLIC_TAWK_WIDGET_ID}
+      />
     </div>
   )
 }

@@ -1,14 +1,14 @@
 import Image from "next/legacy/image"
-import Layout from "../components/Layout"
-import { MdFrontHand } from "react-icons/md"
+import Link from "next/link"
+import { useState } from "react"
 import { FaLinkedinIn } from "react-icons/fa"
 import { GoArrowRight } from "react-icons/go"
-import { SiGmail } from "react-icons/si"
-import Link from "next/link"
 import { IoLogoWhatsapp } from "react-icons/io"
+import { MdFrontHand } from "react-icons/md"
+import { SiGmail } from "react-icons/si"
+import Layout from "../components/Layout"
 import RecentWork from "../components/RecentWork"
 import RecentWorkData from "../components/RecentWork.json"
-import { useState } from "react"
 
 export default function Home() {
   const [showSocialMediaButton, setShowSocialMediaButton] = useState(false)
@@ -31,7 +31,7 @@ export default function Home() {
                 Hey There <MdFrontHand className="-rotate-45 text-2xl inline-flex -mt-1 text-yellow-600" />
               </div>
               <h1 className=" font-extrabold text-3xl">Paul Ojo</h1>
-              <p className="flex-wrap font-bold ">I am a professional Software Developer</p>
+              <p className="flex-wrap font-bold ">I am a professional Fullstack Software Developer</p>
               <div className="space-x-8 inline-flex mt-4 relative">
                 {showSocialMediaButton && (
                   <div
@@ -75,7 +75,7 @@ export default function Home() {
           {/* About me and Connect with me */}
           <div id="about" className="flex flex-col scroll-mt-24 md:m-10  md:ml-0 sm:grid-cols-1 sm:mb-6 mt-10 md:mt-20">
             <h1 className="font-extrabold text-lg md:text-2xl text-indigo-600 ">ABOUT ME</h1>
-            <p className="flex flex-wrap md:mt-4 sm:mt-2 text-inherit">
+            <div className="flex flex-wrap md:mt-4 sm:mt-2 text-inherit">
               I am a passionate Fullstack Developer with strong background in backend and frontend development, skilled
               at implementing efficient, scalable, and reliable software solutions that meet the needs of users. I have
               a passion for solving complex problems and a commitment to staying up-to-date with the latest trends and
@@ -85,12 +85,12 @@ export default function Home() {
                 | Socket.io | MongoDB | Formik | RTK-Query | Redux-Toolkit | Framer-Motion | CSS | APIs | HTML and
                 more....
               </p>
-            </p>
+            </div>
           </div>
           <div id="services" className="flex scroll-mt-24 flex-col mt-0 md:m-10 md:mr-0 sm:mb-6 md:mt-20">
             <h1 className=" font-extrabold text-lg md:text-2xl text-indigo-600 ">CONNECT WITH ME</h1>
             <div className=" md:mt-4 sm:mt-2">
-              <p className="font-semibold">Here are some skills I pocess: </p>
+              <div className="font-semibold">Here are some skills I pocess: </div>
               <ul className="list-disc ml-4">
                 <li>High level of expertise in both frontend and backend web development</li>
                 <li>

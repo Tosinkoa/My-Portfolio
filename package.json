@@ -15,9 +15,11 @@
     "js-file-download": "^0.4.12",
     "next": "13.0.2",
     "next-themes": "^0.2.1",
+    "@next/font": "^13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.6.0"
+    "react-icons": "^4.6.0",
+    "@tawk.to/tawk-messenger-react": "^2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

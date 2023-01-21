@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "open-san": ["Open Sans", "sans-serif"],
+        roboto: ["var(--font-roboto)"],
       },
 
       animation: {
