@@ -1,18 +1,12 @@
-import Link from "next/link"
-import { FaLinkedinIn } from "react-icons/fa"
-import { IoLogoWhatsapp } from "react-icons/io"
-import { SiGmail } from "react-icons/si"
+import Link from "next/link";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
   return (
     <footer className="relative h-full text-gray-50 bottom-0 text-sm bg-indigo-600 w-full rounded-t-3xl p-4 font-semibold ">
       <div className="border border-gray-50"></div>
       <div className="flex space-x-4 my-4 text-lg text-center items-center place-content-center">
-        <Link target="_blank" href="https://wa.me/2347068946708">
-          <button className="home_social">
-            <IoLogoWhatsapp className="flex mx-auto text-3xl" />
-          </button>
-        </Link>
         <Link target="_blank" href="https://www.linkedin.com/in/paul-ojo-86a840227/">
           <button className="home_social">
             <FaLinkedinIn className="flex mx-auto text-3xl" />
@@ -59,15 +53,15 @@ const Footer = () => {
           <Link href="#services" className="font-light md:font-normal" passHref>
             Services
           </Link>
-          <Link href="#recent-works" className="font-light md:font-normal" passHref>
-            Recent Works
+          <Link href="#projects" className="font-light md:font-normal" passHref>
+            Projects
           </Link>
         </div>
       </div>
 
       <div className="border border-gray-50 "></div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,12 +1,19 @@
-import Image from "next/legacy/image"
-import Link from "next/link"
+import Image from "next/legacy/image";
+import Link from "next/link";
 
-const RecentWork = ({ id, link, image, label, github_link }) => {
+const Projects = ({ id, link, image, label, github_link }) => {
   return (
     <div>
       <Link target="_blank" href={link}>
         <div className=" h-fit w-fit border-2 border-gray-300 rounded-md">
-          <Image src={image} alt={label} height={380} width={800} objectFit="cover" className="rounded-md" />
+          <Image
+            src={image}
+            alt={label}
+            height={380}
+            width={800}
+            objectFit="cover"
+            className="rounded-md"
+          />
         </div>
       </Link>
       <h1 className="mt-3 font-semibold text-xl md:text-2xl text-center">{label}</h1>
@@ -23,7 +30,7 @@ const RecentWork = ({ id, link, image, label, github_link }) => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RecentWork
+export default Projects;
