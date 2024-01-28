@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "link": "/#",
+    "link": "https://drive.google.com/drive/folders/1DsRbJ8IQWm38DJOKXNA5bnZUCI243SSm?usp=drive_link",
     "image": "/assets/images/best-store.png",
     "label": "Best Store",
     "github_link": ""
@@ -15,7 +15,7 @@
   },
   {
     "id": 3,
-    "link": "https://drive.google.com/drive/folders/1DsRbJ8IQWm38DJOKXNA5bnZUCI243SSm?usp=drive_link",
+    "link": "https://best-pics-app.netlify.app/",
     "image": "/assets/images/Best-Pics.png",
     "label": "Best-Pics App",
     "github_link": "https://github.com/Tosinkoa/Best-Pics"
