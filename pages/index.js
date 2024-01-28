@@ -15,7 +15,7 @@ export default function Home() {
     <Layout>
       <div className="w-10/12 mx-auto font-semibold">
         <div className="grid md:grid-cols-2 md:m-10 md:ml-0 sm:grid-cols-1 justify-center mb-6">
-          <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg hover:-rotate-3 transition-all duration-500 relative mx-auto">
+          <div className="flex h-80 w-80 lg:h-[420px] lg:w-11/12 mt-6 rounded-lg relative mx-auto">
             <Image
               src="/assets/images/paul-image.jpg"
               alt="paul"

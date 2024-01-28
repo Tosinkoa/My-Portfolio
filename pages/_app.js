@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" enableSystem={true}>
       <main className={`${roboto.variable}`}>
         <Component {...pageProps} />
       </main>
